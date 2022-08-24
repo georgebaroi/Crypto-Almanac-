@@ -56,7 +56,7 @@ function Login(){
   
     // JSX code for login form
     const renderForm = (
-      <div className="form">
+      <div className="login">
         <form onSubmit={handleSubmit}>
           <div className="input-container">
             <label>Username </label>
@@ -78,8 +78,8 @@ function Login(){
   
     return (
       <div className="app">
-        <div className="login-form">
-          <div className="title">Sign In</div>
+        <div className="login">
+          <div className="login">Sign In</div>
           {isSubmitted ? <div>Welcome home!</div> : renderForm}
         </div>
       </div>

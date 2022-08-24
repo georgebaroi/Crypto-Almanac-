@@ -5,14 +5,14 @@ function Search({ setSearch }) {
   const [string, setString] = useState("")
 
   return (
-    <div className="ui large fluid icon input">
+    <div className="searchbar">
       <input
         type="text"
         placeholder="Search"
         value={string}
         onChange={(e) => setString(e.target.value)}
       />
-      <i className="circular search link icon" onClick={(e)=>setSearch(string)}></i>
+      <i className="search" onClick={(e)=>setSearch(string)}></i>
     </div>
   );
 }
